@@ -98,7 +98,6 @@ class block_sharing_cart extends block_base {
 
         $this->page->requires->css('/blocks/sharing_cart/styles.css');
         if ($this->is_special_version()) {
-            $this->page->requires->css('/blocks/sharing_cart/custom.css');
         }
         $this->page->requires->jquery();
 		$this->page->requires->js_call_amd('block_sharing_cart/script', 'init', ['add_method' => get_config('block_sharing_cart', 'add_to_sharing_cart')]);
